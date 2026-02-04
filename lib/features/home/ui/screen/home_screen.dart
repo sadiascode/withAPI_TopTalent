@@ -695,12 +695,18 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
               SizedBox(height: 5),
               if (isAdmin && adminStats != null)
-                CustomPichart(diamondValue: adminStats!.formattedDiamondAchieve)
+                CustomPichart(
+                  diamondValue: adminStats!.formattedDiamondAchieve,
+                  targetValue: adminStats!.formattedTargetDiamond,
+                )
               else if (!isAdmin)
                 CustomPichart(
                   diamondValue: isManager
                       ? (currentManager?.totalDiamond.toString() ?? '0')
                       : (currentCreator?.totalDiamond.toString() ?? '0'),
+                  targetValue: isManager
+                      ? (currentManager?.targetDiamond.toString() ?? '10000')
+                      : (currentCreator?.targetDiamond.toString() ?? '10000'),
                 ),
 
               SizedBox(height: 25),
@@ -722,6 +728,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(height: 20),
               if (aiData != null)
                 CustomAlerts(
+                  userRole: widget.role,
                   aiData: aiData,
                   isLoading: isLoading,
                   errorMessage: errorMessage,

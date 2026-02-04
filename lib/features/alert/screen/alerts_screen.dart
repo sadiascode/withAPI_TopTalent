@@ -152,6 +152,7 @@ class _AlertsScreenState extends State<AlertsScreen> {
                       (alert) => Padding(
                     padding: const EdgeInsets.only(bottom: 15),
                     child: CustomAlert(
+                      userRole: widget.role,
                       priorityLabel: alert.priority?.toUpperCase() ?? "HIGH",
                       priorityConColor: _getPriorityColor(alert.priority),
                       priorityColor: _getPriorityBgColor(alert.priority),

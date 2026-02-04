@@ -145,13 +145,9 @@ class LoginController extends GetxController {
       return; 
     }
 
-    // Store token
-    final box = GetStorage();
-    await box.write('token', authToken);
-    await box.write('access_token', authToken);
-    await box.write('access', authToken); 
-    
-    print("✅ Token stored successfully");
+    // Store token using centralized service
+    await TokenStorageService.forceStoreToken(authToken);
+    print("✅ Token stored successfully via TokenStorageService");
 
     String? roleStr;
 

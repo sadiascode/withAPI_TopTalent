@@ -200,18 +200,8 @@ class CustomAlerts extends StatelessWidget {
     return Column(
       children: [
         _buildAlertItem(
-          'Manager Lisa Anderson is underperforming - 59% of target',
-          '13:31:55',
-        ),
-        const SizedBox(height: 10),
-        _buildAlertItem(
-          'Manager Lisa Anderson is underperforming - 59% of target',
-          '13:31:55',
-        ),
-        const SizedBox(height: 10),
-        _buildAlertItem(
-          'Manager Lisa Anderson is underperforming - 59% of target',
-          '13:31:55',
+          'System alert: Performance below target',
+          '-',
         ),
       ],
     );

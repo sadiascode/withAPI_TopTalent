@@ -397,6 +397,7 @@ class _ManagerDetailsScreenState extends State<ManagerDetailsScreen> {
                     managerInfo?.score?.toString() ??
                     widget.managerModel?.diamond?.toString() ??
                     '0',
+                targetValue: managerInfo?.targetDiamonds?.toString() ?? '-',
               ),
 
               const SizedBox(height: 16),

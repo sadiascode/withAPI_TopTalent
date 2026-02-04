@@ -67,76 +67,7 @@ class _EditScreenState extends State<EditScreen> {
     }
   }
 
-  // Image upload method
-  Future<String?> uploadImage(XFile imageFile) async {
-    try {
-      print('=== UPLOADING IMAGE ===');
-      print('Image path: ${imageFile.path}');
-
-      final token = await TokenValidationService.getValidToken();
-      if (token == null) {
-        print('❌ No valid token found');
-        return null;
-      }
-
-      final dio = Dio();
-
-      FormData formData = FormData.fromMap({
-        'profile_image': await MultipartFile.fromFile(
-          imageFile.path,
-          filename: imageFile.name,
-        ),
-      });
-
-      final response = await dio.post(
-        Urls.Self_Profile_Update,
-        data: formData,
-        options: Options(
-          headers: {
-            'Authorization': 'Bearer $token',
-            'Content-Type': 'multipart/form-data',
-          },
-        ),
-      );
-
-      print('📤 Image Upload Response:');
-      print('   - Status Code: ${response.statusCode}');
-      print('   - Response Data: ${response.data}');
-
-      if (response.statusCode == 200 && response.data != null) {
-        // Extract the image URL from the response
-        final responseData = response.data as Map<String, dynamic>;
-        String? profileImageUrl;
-
-        // Check different possible response formats
-        if (responseData['profile_image'] != null) {
-          profileImageUrl = responseData['profile_image'] as String?;
-        } else if (responseData['data'] != null &&
-            responseData['data']['profile_image'] != null) {
-          profileImageUrl = responseData['data']['profile_image'] as String?;
-        } else if (responseData['user'] != null &&
-            responseData['user']['profile_image'] != null) {
-          profileImageUrl = responseData['user']['profile_image'] as String?;
-        }
-
-        // Add base URL if the image URL is relative
-        if (profileImageUrl != null && !profileImageUrl.startsWith('http')) {
-          profileImageUrl = '${Urls.baseUrl}$profileImageUrl';
-        }
-
-        if (profileImageUrl != null) {
-          print('✅ Image uploaded successfully: $profileImageUrl');
-          return profileImageUrl;
-        }
-      }
-
-      print('❌ Image upload failed');
-      return null;
-    } catch (e) {
-      print('❌ Error uploading image: $e');
-      return null;
-    }
-  }
+  // Removed uploadImage method, merged into updateProfile
 
   // Password change method
   Future<void> changePassword(BuildContext context) async {
@@ -207,7 +138,6 @@ class _EditScreenState extends State<EditScreen> {
   Future<void> updateProfile(BuildContext context) async {
     print('=== PROFILE UPDATE METHOD START ===');
     print('Name Controller Text: "${nameController.text}"');
-    print('Name Length: ${nameController.text.length}');
 
     if (nameController.text.isEmpty) {
       print('❌ Validation Failed: Name is empty');
@@ -223,15 +153,25 @@ class _EditScreenState extends State<EditScreen> {
       return;
     }
 
+    setState(() {
+      isUploadingImage = true;
+    });
+
     print('✅ Validation Passed: Calling ProfileUpdateService');
     final success = await ProfileUpdateService.updateProfile(
       name: nameController.text,
-      profileImage: null, // Can add image picker later
+      profileImageFile: selectedImage,
     );
+
+    if (mounted) {
+      setState(() {
+        isUploadingImage = false;
+      });
+    }
 
     print('ProfileUpdateService Result: $success');
     if (success) {
-      print('✅ Profile Update Success - Showing success message');
+      print('✅ Profile Update Success');
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           backgroundColor: Colors.black,
@@ -241,8 +181,10 @@ class _EditScreenState extends State<EditScreen> {
           ),
         ),
       );
+      // Refresh profile to show updated info
+      _fetchUserProfile();
     } else {
-      print('❌ Profile Update Failed - Showing error message');
+      print('❌ Profile Update Failed');
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           backgroundColor: Colors.black,
@@ -351,7 +293,6 @@ class _EditScreenState extends State<EditScreen> {
             GestureDetector(
               onTap: () async {
                 final ImagePicker picker = ImagePicker();
-                // Pick an image.
                 final XFile? image = await picker.pickImage(
                   source: ImageSource.gallery,
                 );
@@ -359,47 +300,8 @@ class _EditScreenState extends State<EditScreen> {
                 if (image != null) {
                   setState(() {
                     selectedImage = image;
-                    isUploadingImage = true;
                   });
-
-                  // Upload the image
-                  final imageUrl = await uploadImage(image);
-
-                  if (mounted) {
-                    setState(() {
-                      isUploadingImage = false;
-                    });
-
-                    if (imageUrl != null) {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          backgroundColor: Colors.black,
-                          content: Text(
-                            'Profile image updated successfully',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
-                      );
-                      // Refresh profile to show new image
-                      _fetchUserProfile();
-                    } else {
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          backgroundColor: Colors.black,
-                          content: Text(
-                            'Failed to update profile image',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                        ),
-                      );
-                    }
-                  }
+                  print('📸 Image selected: ${image.path}');
                 }
               },
               child: Text(
@@ -454,25 +356,9 @@ class _EditScreenState extends State<EditScreen> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Old Password',
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: Text(
-                        'Change password',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.black87,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ),
-                  ],
+                Text(
+                  'Old Password',
+                  style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
                 SizedBox(height: 10),
                 CustomTextfield(
@@ -487,25 +373,9 @@ class _EditScreenState extends State<EditScreen> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'New Password',
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: Text(
-                        'Change password',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.black87,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ),
-                  ],
+                Text(
+                  'New Password',
+                  style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
                 SizedBox(height: 10),
                 CustomTextfield(
@@ -520,25 +390,9 @@ class _EditScreenState extends State<EditScreen> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      'Confirm Password',
-                      style: TextStyle(fontSize: 16, color: Colors.white),
-                    ),
-                    GestureDetector(
-                      onTap: () {},
-                      child: Text(
-                        'Change password',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.black87,
-                          decoration: TextDecoration.underline,
-                        ),
-                      ),
-                    ),
-                  ],
+                Text(
+                  'Confirm Password',
+                  style: TextStyle(fontSize: 16, color: Colors.white),
                 ),
                 SizedBox(height: 10),
                 CustomTextfield(
@@ -578,19 +432,14 @@ class _EditScreenState extends State<EditScreen> {
                 );
 
                 if (hasPasswordData && hasProfileData) {
-                  print(
-                    '🔄 Scenario: Both profile and password changes detected',
-                  );
-                  // Update both profile and password
+                  print('🔄 Scenario: Both profile and password changes detected');
                   await updateProfile(context);
                   await changePassword(context);
                 } else if (hasPasswordData) {
                   print('🔄 Scenario: Only password change detected');
-                  // Only change password
                   await changePassword(context);
-                } else if (hasProfileData) {
-                  print('🔄 Scenario: Only profile change detected');
-                  // Only update profile
+                } else if (hasProfileData || selectedImage != null) {
+                  print('🔄 Scenario: Profile or Image change detected');
                   await updateProfile(context);
                 } else {
                   print('🔄 Scenario: No changes detected');

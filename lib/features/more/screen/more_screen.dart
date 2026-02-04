@@ -7,6 +7,7 @@ import 'package:top_talent_agency/features/more/services/user_profile_service.da
 import 'package:top_talent_agency/features/more/data/user_profile_model.dart';
 
 import '../../../common/custom_color.dart';
+import 'package:top_talent_agency/core/services/token_storage_service.dart';
 import '../../auth/ui/screens/login_screen.dart';
 
 class MoreScreen extends StatefulWidget {
@@ -274,12 +275,19 @@ class _MoreScreenState extends State<MoreScreen> {
                                     ),
                                     const SizedBox(width: 12),
                                     TextButton(
-                                      onPressed: () {
-                                        Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                            builder: (context) => LoginScreen(),
-                                          ),
-                                        );
+                                      onPressed: () async {
+                                        // Clear all stored data
+                                        await TokenStorageService.clearTokens();
+                                        await clearCurrentRole();
+                                        
+                                        if (context.mounted) {
+                                          Navigator.of(context).pushAndRemoveUntil(
+                                            MaterialPageRoute(
+                                              builder: (context) => const LoginScreen(),
+                                            ),
+                                            (route) => false,
+                                          );
+                                        }
                                       },
                                       child: const Text(
                                         "Sign Out",
