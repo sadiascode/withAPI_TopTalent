@@ -123,11 +123,10 @@ class _CreatorsRankState extends State<CreatorsRank> {
                                       ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: allCreators.isNotEmpty
-                                            ? Image.network(
-                                                'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200',
-                                                width: imageSize,
-                                                height: imageSize,
-                                                fit: BoxFit.cover,
+                                            ? Icon(
+                                                Icons.person,
+                                                size: imageSize,
+                                                color: Colors.grey[600],
                                               )
                                             : Container(),
                                       ),
@@ -146,9 +145,9 @@ class _CreatorsRankState extends State<CreatorsRank> {
                                     ],
                                   ),
                                   const SizedBox(height: 8),
-                                  Text(
-                                    allCreators.isNotEmpty ? (allCreators[0].username ?? 'Unknown Creator') : 'Sophie Kihm',
-                                    maxLines: 1,
+                                    Text(
+                                      allCreators.isNotEmpty ? (allCreators[0].username ?? 'N/A') : '-',
+                                      maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                     style: TextStyle(
                                       fontSize: sw * 0.04,
@@ -200,7 +199,7 @@ class _CreatorsRankState extends State<CreatorsRank> {
                                           children: [
                                             CustomRankcoin(
                                               rank: '$actualRank',
-                                              name: creator.username ?? 'Unknown Creator',
+                                              name: creator.username ?? 'N/A',
                                               hours: '${creator.totalHour ?? 0}h',
                                               Diamond: '${creator.totalDiamond ?? 0}'
                                             ),
@@ -266,11 +265,10 @@ class _CreatorsRankState extends State<CreatorsRank> {
                                       ClipRRect(
                                         borderRadius: BorderRadius.circular(8),
                                         child: allCreators.isNotEmpty
-                                            ? Image.network(
-                                                'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200',
-                                                width: imageSize,
-                                                height: imageSize,
-                                                fit: BoxFit.cover,
+                                            ? Icon(
+                                                Icons.person,
+                                                size: imageSize,
+                                                color: Colors.grey[600],
                                               )
                                             : Container(),
                                       ),
@@ -289,9 +287,9 @@ class _CreatorsRankState extends State<CreatorsRank> {
                                     ],
                                   ),
                                   const SizedBox(height: 8),
-                                  Text(
-                                    allCreators.isNotEmpty ? (allCreators[0].username ?? 'Unknown Creator') : 'Sophie Kihm',
-                                    maxLines: 1,
+                                    Text(
+                                      allCreators.isNotEmpty ? (allCreators[0].username ?? 'N/A') : '-',
+                                      maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                     style: TextStyle(
                                       fontSize: sw * 0.04,
@@ -341,7 +339,7 @@ class _CreatorsRankState extends State<CreatorsRank> {
                                     children: [
                                       CustomRankcoin(
                                         rank: '$actualRank',
-                                        name: creator.username ?? 'Unknown Creator',
+                                        name: creator.username ?? 'N/A',
                                         hours: '${creator.totalHour ?? 0}h',
                                         Diamond: '${creator.totalDiamond ?? 0}'
                                       ),

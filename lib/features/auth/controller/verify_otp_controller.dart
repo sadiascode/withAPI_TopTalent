@@ -229,7 +229,7 @@ class VerifyOtpController extends GetxController {
 
   @override
   void onClose() {
-    otpController.dispose();
+    // otpController.dispose(); // Commented out to prevent hang during navigation/disposal
     super.onClose();
   }
 }

@@ -1,0 +1,761 @@
+Analyzing withAPI_TopTalent...                                  
+
+   info • The constant name 'Self_Profile_Update' isn't a lowerCamelCase identifier • lib/app/urls.dart:5:23 • constant_identifier_names
+   info • The constant name 'Self_Profile_change_password' isn't a lowerCamelCase identifier • lib/app/urls.dart:6:23 • constant_identifier_names
+   info • The constant name 'Self_Profile' isn't a lowerCamelCase identifier • lib/app/urls.dart:11:23 • constant_identifier_names
+   info • The constant name 'Reset_password' isn't a lowerCamelCase identifier • lib/app/urls.dart:12:23 • constant_identifier_names
+   info • The constant name 'Verify_Email' isn't a lowerCamelCase identifier • lib/app/urls.dart:13:23 • constant_identifier_names
+   info • The constant name 'resend_otp' isn't a lowerCamelCase identifier • lib/app/urls.dart:14:23 • constant_identifier_names
+   info • The constant name 'Email_otp' isn't a lowerCamelCase identifier • lib/app/urls.dart:15:23 • constant_identifier_names
+   info • The constant name 'forgot_password' isn't a lowerCamelCase identifier • lib/app/urls.dart:16:23 • constant_identifier_names
+   info • The constant name 'verify_otp' isn't a lowerCamelCase identifier • lib/app/urls.dart:17:23 • constant_identifier_names
+   info • The constant name 'token_refresh' isn't a lowerCamelCase identifier • lib/app/urls.dart:20:23 • constant_identifier_names
+   info • The constant name 'Admin' isn't a lowerCamelCase identifier • lib/app/urls.dart:23:23 • constant_identifier_names
+   info • The constant name 'Manager_Dashboard_Score' isn't a lowerCamelCase identifier • lib/app/urls.dart:26:23 • constant_identifier_names
+   info • The constant name 'Creator_Dashboard_Score' isn't a lowerCamelCase identifier • lib/app/urls.dart:30:23 • constant_identifier_names
+   info • The constant name 'AI_Response_manager' isn't a lowerCamelCase identifier • lib/app/urls.dart:48:23 • constant_identifier_names
+   info • The constant name 'Month_wise_Filter_admin' isn't a lowerCamelCase identifier • lib/app/urls.dart:52:23 • constant_identifier_names
+   info • The constant name 'Month_wise_Filter_manager' isn't a lowerCamelCase identifier • lib/app/urls.dart:54:23 • constant_identifier_names
+   info • The constant name 'Month_wise_Filter_creator' isn't a lowerCamelCase identifier • lib/app/urls.dart:56:23 • constant_identifier_names
+   info • The constant name 'AI_Response_admin_manager_creator' isn't a lowerCamelCase identifier • lib/app/urls.dart:68:23 • constant_identifier_names
+   info • The constant name 'AI_Response_alertproblem' isn't a lowerCamelCase identifier • lib/app/urls.dart:72:23 • constant_identifier_names
+   info • The constant name 'AI_Response_alerts' isn't a lowerCamelCase identifier • lib/app/urls.dart:74:23 • constant_identifier_names
+warning • Unused import: 'package:top_talent_agency/features/more/screen/more_screen.dart' • lib/common/navBar/bottom_tabs.dart:3:8 • unused_import
+warning • Unused import: 'package:get_storage/get_storage.dart' • lib/core/services/network/network_client.dart:4:8 • unused_import
+   info • The import of 'package:http_parser/http_parser.dart' is unnecessary because all of the used elements are also provided by the import of 'package:http/http.dart' • lib/core/services/network/network_client.dart:6:8 • unnecessary_import
+   info • The imported package 'mime' isn't a dependency of the importing package • lib/core/services/network/network_client.dart:8:8 • depend_on_referenced_packages
+   info • Don't invoke 'print' in production code • lib/core/services/network/network_client.dart:36:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/network/network_client.dart:38:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/network/network_client.dart:41:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:11:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:16:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:20:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:21:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:22:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:23:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:33:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:34:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:35:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:36:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:40:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:46:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:49:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:52:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:56:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:57:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:58:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:62:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:65:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:68:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:74:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:76:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:77:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:78:15 • avoid_print
+warning • The receiver can't be null, so the null-aware operator '?.' is unnecessary • lib/core/services/token_refresh_service.dart:78:88 • invalid_null_aware_operator
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:81:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:82:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:83:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:89:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:92:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:96:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:97:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:101:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:108:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:132:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:138:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:140:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:143:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:146:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:147:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:148:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:150:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:153:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_refresh_service.dart:167:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:12:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:13:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:14:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:18:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:21:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:24:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:27:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:30:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:35:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:36:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:37:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:39:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:40:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:42:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:49:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:53:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:57:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:58:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:59:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:60:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:63:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:67:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:68:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:69:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:70:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:73:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:77:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:78:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:79:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:80:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:83:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:85:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:86:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:89:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:90:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:105:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:107:7 • avoid_print
+warning • The value of the local variable 'box' isn't used • lib/core/services/token_storage_service.dart:120:13 • unused_local_variable
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:136:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_storage_service.dart:158:7 • avoid_print
+warning • Unused import: 'dart:convert' • lib/core/services/token_validation_service.dart:1:8 • unused_import
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:12:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:16:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:20:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:21:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:32:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:33:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:34:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:35:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:37:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:38:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:39:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:42:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:43:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:46:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:47:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:48:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:51:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:52:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:53:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:57:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:58:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:66:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:72:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:74:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:77:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:81:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:83:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:86:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:87:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:92:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/core/services/token_validation_service.dart:93:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:10:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:15:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:19:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:20:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:31:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:32:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:33:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:34:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:36:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:37:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:38:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:39:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:43:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:48:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:49:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:50:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:55:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:56:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:57:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:58:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:59:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:63:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:64:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:68:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:69:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:73:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:76:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:81:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:85:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:98:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:108:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:109:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:112:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:114:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:117:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:119:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:124:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_api_test_service.dart:128:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:10:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:14:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:18:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:28:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:29:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:30:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:32:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:33:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:34:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:38:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:39:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:46:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:49:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:54:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:57:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:62:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:66:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:67:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:68:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:72:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:73:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:74:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:75:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:78:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:81:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:87:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:88:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:89:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:93:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:97:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:99:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:104:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/admin/services/manager_dashboard_service.dart:106:7 • avoid_print
+warning • The declaration '_createMockManagerData' isn't referenced • lib/features/admin/services/manager_dashboard_service.dart:112:32 • unused_element
+warning • The declaration '_createEnhancedMockData' isn't referenced • lib/features/admin/services/manager_dashboard_service.dart:148:32 • unused_element
+warning • The declaration 'formatUpdatedAt' isn't referenced • lib/features/alert/data/alert_counts_model.dart:94:13 • unused_element
+warning • Unused import: '../../../common/custom_color.dart' • lib/features/alert/screen/alerts_screen.dart:9:8 • unused_import
+   info • Don't invoke 'print' in production code • lib/features/alert/screen/alerts_screen.dart:64:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/alert/screen/alerts_screen.dart:75:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/alert/screen/alerts_screen.dart:89:7 • avoid_print
+warning • This default clause is covered by the previous cases • lib/features/alert/screen/alerts_screen.dart:101:7 • unreachable_switch_default
+   info • The local variable '_textController' starts with an underscore • lib/features/alert/widget/custom_alert.dart:113:57 • no_leading_underscores_for_local_identifiers
+   info • Don't invoke 'print' in production code • lib/features/alert/widget/custom_alert.dart:164:43 • avoid_print
+   info • 'color' is deprecated and shouldn't be used. Use colorFilter instead • lib/features/alert/widget/custom_alert.dart:197:25 • deprecated_member_use
+warning • Unused import: 'package:get_storage/get_storage.dart' • lib/features/auth/controller/login_controller.dart:3:8 • unused_import
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:29:9 • avoid_print
+   info • Don't use 'BuildContext's across async gaps • lib/features/auth/controller/login_controller.dart:91:9 • use_build_context_synchronously
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:96:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:97:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:98:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:99:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:102:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:104:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:136:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:150:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:170:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:182:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:186:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:187:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:195:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:198:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:201:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:212:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:213:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:214:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:215:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:216:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:217:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:222:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:225:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:227:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:231:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:235:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:237:7 • avoid_print
+   info • Don't use 'BuildContext's across async gaps • lib/features/auth/controller/login_controller.dart:243:9 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps • lib/features/auth/controller/login_controller.dart:250:9 • use_build_context_synchronously
+   info • Don't invoke 'print' in production code • lib/features/auth/controller/login_controller.dart:256:7 • avoid_print
+warning • The value of the local variable 'data' isn't used • lib/features/auth/controller/reset_password_controller.dart:130:13 • unused_local_variable
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:29:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:46:9 • avoid_print
+warning • Dead code • lib/features/creator/creators_rank.dart:58:44 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:58:47 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:59:47 • dead_null_aware_expression
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:68:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:70:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:78:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:82:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:89:5 • avoid_print
+warning • Dead code • lib/features/creator/creators_rank.dart:149:89 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:149:92 • dead_null_aware_expression
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:197:41 • avoid_print
+warning • Dead code • lib/features/creator/creators_rank.dart:197:125 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:197:128 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:202:73 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:203:78 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:204:83 • dead_null_aware_expression
+   info • Unnecessary use of 'toList' in a spread • lib/features/creator/creators_rank.dart:209:42 • unnecessary_to_list_in_spreads
+warning • Dead code • lib/features/creator/creators_rank.dart:291:89 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:291:92 • dead_null_aware_expression
+   info • Don't invoke 'print' in production code • lib/features/creator/creators_rank.dart:337:35 • avoid_print
+warning • Dead code • lib/features/creator/creators_rank.dart:337:119 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:337:122 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:342:67 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:343:72 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/creator/creators_rank.dart:344:77 • dead_null_aware_expression
+   info • Unnecessary use of 'toList' in a spread • lib/features/creator/creators_rank.dart:349:36 • unnecessary_to_list_in_spreads
+   info • Don't invoke 'print' in production code • lib/features/home/controller/admin/manager_controller.dart:21:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/data/manager_home_model.dart:22:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/data/manager_home_model.dart:23:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/data/manager_home_model.dart:24:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/data/manager_home_model.dart:25:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/data/manager_home_model.dart:28:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/data/manager_home_model.dart:29:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/data/manager_home_model.dart:32:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:11:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:12:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:13:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:23:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:24:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:28:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:33:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:34:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:35:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:36:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:37:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:38:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:42:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:43:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/admin_stats_service.dart:47:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/api_service.dart:20:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/api_service.dart:24:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:19:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:20:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:21:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:22:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:34:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:42:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:43:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:44:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:48:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:49:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:53:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:54:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:55:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:56:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:57:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:58:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:59:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:60:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:61:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:62:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:63:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:67:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:68:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:72:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/services/home_ai_service.dart:79:5 • avoid_print
+warning • Unused import: 'package:top_talent_agency/core/services/role_storage_service.dart' • lib/features/home/ui/screen/home_screen.dart:5:8 • unused_import
+warning • Unused import: 'package:top_talent_agency/features/manager/data/manager_model.dart' • lib/features/home/ui/screen/home_screen.dart:19:8 • unused_import
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:54:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:55:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:56:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:57:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:58:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:63:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:67:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:71:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:77:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:82:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:93:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:94:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:98:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:99:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:107:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:108:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:115:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:117:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:120:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:121:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:128:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:130:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:133:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:136:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:143:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:145:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:148:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:149:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:152:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:154:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:161:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:162:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:163:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:168:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:169:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:172:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:175:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:178:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:179:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:180:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:189:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:192:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:193:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:194:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:195:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:196:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:203:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:204:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:206:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:210:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:215:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:220:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:226:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:228:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:231:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:236:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:241:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:252:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:253:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:257:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:258:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:266:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:271:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:273:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:276:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:281:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:283:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:286:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:293:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:295:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:298:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:299:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:302:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:304:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:311:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:321:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:324:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:325:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:326:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:327:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:338:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:341:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:344:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:349:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:366:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:375:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:376:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:377:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:378:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:380:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:391:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:397:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:404:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:405:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:406:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:407:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:408:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:409:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:412:7 • avoid_print
+warning • The value of the local variable 'managerController' isn't used • lib/features/home/ui/screen/home_screen.dart:439:29 • unused_local_variable
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:441:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:442:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:443:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:444:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:445:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:446:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:447:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:448:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:449:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:452:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/home/ui/screen/home_screen.dart:455:5 • avoid_print
+warning • Unused import: 'package:top_talent_agency/features/alert/widget/custom_alert.dart' • lib/features/home/widget/custom_alerts.dart:4:8 • unused_import
+warning • The declaration '_buildFallbackAlerts' isn't referenced • lib/features/home/widget/custom_alerts.dart:199:10 • unused_element
+   info • 'color' is deprecated and shouldn't be used. Use colorFilter instead • lib/features/home/widget/custom_both.dart:67:23 • deprecated_member_use
+   info • 'color' is deprecated and shouldn't be used. Use colorFilter instead • lib/features/home/widget/custom_coin.dart:56:19 • deprecated_member_use
+warning • Unused import: '../services/api_service.dart' • lib/features/home/widget/custom_minicontainer.dart:4:8 • unused_import
+warning • The declaration '_buildFallbackSummary' isn't referenced • lib/features/home/widget/custom_summary.dart:269:10 • unused_element
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:61:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:77:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:90:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:112:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:116:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:119:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:124:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:127:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:139:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:145:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:165:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:183:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:191:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/creator_details_screen.dart:194:7 • avoid_print
+warning • The receiver can't be 'null' because of short-circuiting, so the null-aware operator '?.' can't be used • lib/features/manager/screen/creator_details_screen.dart:286:56 • invalid_null_aware_operator
+warning • The receiver can't be 'null' because of short-circuiting, so the null-aware operator '?.' can't be used • lib/features/manager/screen/creator_details_screen.dart:323:56 • invalid_null_aware_operator
+warning • The receiver can't be 'null' because of short-circuiting, so the null-aware operator '?.' can't be used • lib/features/manager/screen/creator_details_screen.dart:331:59 • invalid_null_aware_operator
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:70:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:83:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:93:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:96:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:117:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:135:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:138:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:160:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:161:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:165:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:168:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:174:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:175:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:190:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:210:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:228:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:236:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:239:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:267:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:276:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:283:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:296:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_details_screen.dart:309:7 • avoid_print
+warning • The receiver can't be 'null' because of short-circuiting, so the null-aware operator '?.' can't be used • lib/features/manager/screen/manager_details_screen.dart:398:49 • invalid_null_aware_operator
+warning • The receiver can't be 'null' because of short-circuiting, so the null-aware operator '?.' can't be used • lib/features/manager/screen/manager_details_screen.dart:437:59 • invalid_null_aware_operator
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:26:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:32:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:34:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:43:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:45:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:53:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:55:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:63:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:67:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:74:5 • avoid_print
+warning • Dead code • lib/features/manager/screen/manager_rank.dart:159:81 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/manager_rank.dart:159:84 • dead_null_aware_expression
+warning • Dead code • lib/features/manager/screen/manager_rank.dart:216:81 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/manager_rank.dart:216:84 • dead_null_aware_expression
+warning • Dead code • lib/features/manager/screen/manager_rank.dart:273:81 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/manager_rank.dart:273:84 • dead_null_aware_expression
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:320:33 • avoid_print
+warning • Dead code • lib/features/manager/screen/manager_rank.dart:325:58 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/manager_rank.dart:325:61 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/manager_rank.dart:326:76 • dead_null_aware_expression
+   info • Unnecessary use of 'toList' in a spread • lib/features/manager/screen/manager_rank.dart:332:34 • unnecessary_to_list_in_spreads
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/manager_rank.dart:340:35 • avoid_print
+warning • Dead code • lib/features/manager/screen/manager_rank.dart:345:60 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/manager_rank.dart:345:63 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/manager_rank.dart:346:78 • dead_null_aware_expression
+   info • Unnecessary use of 'toList' in a spread • lib/features/manager/screen/manager_rank.dart:352:36 • unnecessary_to_list_in_spreads
+warning • Unused import: 'package:top_talent_agency/features/manager/data/manager_model.dart' • lib/features/manager/screen/managers_screen.dart:7:8 • unused_import
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:29:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:32:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:34:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:35:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:36:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:42:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:51:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:52:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:56:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:63:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/managers_screen.dart:93:19 • avoid_print
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/manager/screen/managers_screen.dart:119:49 • deprecated_member_use
+   info • 'color' is deprecated and shouldn't be used. Use colorFilter instead • lib/features/manager/screen/managers_screen.dart:137:25 • deprecated_member_use
+   info • Unnecessary use of 'toList' in a spread • lib/features/manager/screen/managers_screen.dart:155:20 • unnecessary_to_list_in_spreads
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:27:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:44:9 • avoid_print
+warning • Dead code • lib/features/manager/screen/saras_rank.dart:56:44 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:56:47 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:57:47 • dead_null_aware_expression
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:66:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:68:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:76:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:80:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:87:5 • avoid_print
+warning • The value of the local variable 'imageSize' isn't used • lib/features/manager/screen/saras_rank.dart:93:18 • unused_local_variable
+warning • Dead code • lib/features/manager/screen/saras_rank.dart:158:83 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:158:86 • dead_null_aware_expression
+warning • Dead code • lib/features/manager/screen/saras_rank.dart:202:83 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:202:86 • dead_null_aware_expression
+warning • Dead code • lib/features/manager/screen/saras_rank.dart:246:83 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:246:86 • dead_null_aware_expression
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:291:25 • avoid_print
+warning • Dead code • lib/features/manager/screen/saras_rank.dart:291:114 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:291:117 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:296:57 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:297:62 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:298:67 • dead_null_aware_expression
+   info • Unnecessary use of 'toList' in a spread • lib/features/manager/screen/saras_rank.dart:303:26 • unnecessary_to_list_in_spreads
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/saras_rank.dart:310:25 • avoid_print
+warning • Dead code • lib/features/manager/screen/saras_rank.dart:310:114 • dead_code
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:310:117 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:315:57 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:316:62 • dead_null_aware_expression
+warning • The left operand can't be null, so the right operand is never executed • lib/features/manager/screen/saras_rank.dart:317:67 • dead_null_aware_expression
+   info • Unnecessary use of 'toList' in a spread • lib/features/manager/screen/saras_rank.dart:322:26 • unnecessary_to_list_in_spreads
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:37:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:38:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:39:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:40:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:43:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:61:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:63:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:78:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:83:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:86:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:99:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:113:9 • avoid_print
+warning • The operand can't be 'null', so the condition is always 'true' • lib/features/manager/screen/view_assign_creator_screen.dart:126:28 • unnecessary_null_comparison
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:128:17 • avoid_print
+warning • The '!' will have no effect because the receiver can't be null • lib/features/manager/screen/view_assign_creator_screen.dart:133:62 • unnecessary_non_null_assertion
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:145:19 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:158:21 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:166:19 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:169:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:185:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:197:7 • avoid_print
+   info • 'color' is deprecated and shouldn't be used. Use colorFilter instead • lib/features/manager/screen/view_assign_creator_screen.dart:260:23 • deprecated_member_use
+   info • Don't invoke 'print' in production code • lib/features/manager/screen/view_assign_creator_screen.dart:273:15 • avoid_print
+   info • Unnecessary use of 'toList' in a spread • lib/features/manager/screen/view_assign_creator_screen.dart:284:16 • unnecessary_to_list_in_spreads
+warning • The declaration '_getCreatorStatus' isn't referenced • lib/features/manager/screen/view_assign_creator_screen.dart:443:10 • unused_element
+warning • The declaration '_getStatusTextColor' isn't referenced • lib/features/manager/screen/view_assign_creator_screen.dart:449:9 • unused_element
+warning • The declaration '_getStatusColor' isn't referenced • lib/features/manager/screen/view_assign_creator_screen.dart:455:9 • unused_element
+warning • The declaration '_getProgressColor' isn't referenced • lib/features/manager/screen/view_assign_creator_screen.dart:461:9 • unused_element
+   info • The variable name 'ActionTile' isn't a lowerCamelCase identifier • lib/features/manager/widget/actions_tile.dart:4:8 • non_constant_identifier_names
+   info • 'color' is deprecated and shouldn't be used. Use colorFilter instead • lib/features/manager/widget/actions_tile.dart:27:13 • deprecated_member_use
+   info • The variable name 'Diamond' isn't a lowerCamelCase identifier • lib/features/manager/widget/custom_rankcoin.dart:7:16 • non_constant_identifier_names
+   info • The variable name 'Diamond' isn't a lowerCamelCase identifier • lib/features/manager/widget/custom_rankcoin.dart:15:19 • non_constant_identifier_names
+warning • The value of the local variable 'email' isn't used • lib/features/manager/widget/custom_sortview.dart:20:18 • unused_local_variable
+warning • The value of the local variable 'rank' isn't used • lib/features/manager/widget/custom_sortview.dart:23:15 • unused_local_variable
+   info • 'color' is deprecated and shouldn't be used. Use colorFilter instead • lib/features/manager/widget/custom_sortview.dart:245:21 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/manager/widget/live_chart.dart:105:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/manager/widget/live_chart.dart:138:52 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/manager/widget/profile_card.dart:73:41 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/manager/widget/profile_card.dart:82:39 • deprecated_member_use
+   info • The variable name 'ProgressCard' isn't a lowerCamelCase identifier • lib/features/manager/widget/progress_card.dart:3:8 • non_constant_identifier_names
+   info • Don't invoke 'print' in production code • lib/features/more/data/user_profile_model.dart:24:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/data/user_profile_model.dart:25:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/data/user_profile_model.dart:28:5 • avoid_print
+warning • Unused import: 'package:dio/dio.dart' • lib/features/more/screen/edit_screen.dart:3:8 • unused_import
+warning • Unused import: 'package:top_talent_agency/app/urls.dart' • lib/features/more/screen/edit_screen.dart:12:8 • unused_import
+warning • Unused import: 'package:top_talent_agency/core/services/token_validation_service.dart' • lib/features/more/screen/edit_screen.dart:13:8 • unused_import
+   info • Constructors in '@immutable' classes should be declared as 'const' • lib/features/more/screen/edit_screen.dart:20:3 • prefer_const_constructors_in_immutables
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:58:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:66:7 • avoid_print
+   info • Don't use 'BuildContext's across async gaps • lib/features/more/screen/edit_screen.dart:111:28 • use_build_context_synchronously
+   info • Don't use 'BuildContext's across async gaps • lib/features/more/screen/edit_screen.dart:125:28 • use_build_context_synchronously
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:139:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:140:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:143:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:160:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:172:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:174:7 • avoid_print
+   info • Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check • lib/features/more/screen/edit_screen.dart:175:28 • use_build_context_synchronously
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:187:7 • avoid_print
+   info • Don't use 'BuildContext's across async gaps, guarded by an unrelated 'mounted' check • lib/features/more/screen/edit_screen.dart:188:28 • use_build_context_synchronously
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:198:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:304:19 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:410:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:420:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:421:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:422:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:423:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:424:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:427:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:430:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:435:19 • avoid_print
+   info • Don't use 'BuildContext's across async gaps • lib/features/more/screen/edit_screen.dart:437:40 • use_build_context_synchronously
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:439:19 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:442:19 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:445:19 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/edit_screen.dart:460:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/screen/more_screen.dart:37:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:17:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:18:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:19:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:20:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:21:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:25:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:29:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:48:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:49:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:50:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:51:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:53:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:54:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:55:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:58:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:61:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:62:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:63:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/password_change_service.dart:67:7 • avoid_print
+warning • Unused import: 'dart:convert' • lib/features/more/services/profile_update_service.dart:1:8 • unused_import
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:14:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:15:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:16:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:20:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:24:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:45:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:48:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:53:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:54:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:55:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:58:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:61:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:62:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:63:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/profile_update_service.dart:67:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:10:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:14:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:18:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:28:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:29:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:30:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:32:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:33:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:34:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:38:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:51:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:52:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:53:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:54:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:55:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:59:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:60:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:61:9 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/more/services/user_profile_service.dart:65:7 • avoid_print
+   info • An uninitialized field should have an explicit type annotation • lib/features/more/widget/custom_align.dart:3:9 • prefer_typing_uninitialized_variables
+   info • Missing type annotation • lib/features/more/widget/custom_align.dart:3:9 • strict_top_level_inference
+   info • 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre • lib/features/more/widget/custom_more.dart:144:17 • deprecated_member_use
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:10:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:11:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:12:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:13:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:16:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:17:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:18:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:21:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:22:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:23:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:24:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:27:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:58:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:59:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:65:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/data/target_request_model.dart:66:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:25:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:30:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:36:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:45:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:46:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:47:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:61:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:62:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:63:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:64:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:72:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:75:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:77:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:81:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:85:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:92:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:93:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:96:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:100:15 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:103:17 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:115:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:117:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:153:11 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:155:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:162:13 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:187:7 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:197:5 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:273:25 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:274:25 • avoid_print
+   info • Don't invoke 'print' in production code • lib/features/target/ui/screen/target_screen.dart:275:25 • avoid_print
+   info • Unnecessary use of 'toList' in a spread • lib/features/target/ui/screen/target_screen.dart:289:26 • unnecessary_to_list_in_spreads
+warning • The declaration '_getProgressColor' isn't referenced • lib/features/target/ui/screen/target_screen.dart:298:9 • unused_element
+warning • This default clause is covered by the previous cases • lib/features/target/ui/screen/target_screen.dart:313:5 • unreachable_switch_default
+   info • The variable name 'Hours' isn't a lowerCamelCase identifier • lib/features/target/ui/widget/custom_targets.dart:10:17 • non_constant_identifier_names
+   info • The variable name 'Hours' isn't a lowerCamelCase identifier • lib/features/target/ui/widget/custom_targets.dart:18:10 • non_constant_identifier_names
+warning • The value of the local variable 'widgetsBinding' isn't used • lib/main.dart:6:18 • unused_local_variable
+warning • Unused import: 'package:top_talent_agency/main.dart' • test/widget_test.dart:12:8 • unused_import
+
+757 issues found. (ran in 1.4s)

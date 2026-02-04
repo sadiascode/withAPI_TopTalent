@@ -4,6 +4,7 @@ class ManagerHomeModel {
   final int rank;
   final int atRisk;
   final int totalDiamond;
+  final int targetDiamond;
   final String totalHour;
 
   ManagerHomeModel({
@@ -12,6 +13,7 @@ class ManagerHomeModel {
     required this.rank,
     required this.atRisk,
     required this.totalDiamond,
+    required this.targetDiamond,
     required this.totalHour,
   });
 
@@ -34,8 +36,9 @@ class ManagerHomeModel {
       myCreators: json['my_creators'] ?? 0,
       rank: json['rank'] ?? 0,
       atRisk: json['at_risk'] ?? 0,
-      totalDiamond: totalDiamond,
-      totalHour: json['total_hour'] ?? '0',
+      totalDiamond: int.tryParse(totalDiamond.toString()) ?? 0,
+      targetDiamond: int.tryParse((json['target_diamond'] ?? json['target_diamonds'] ?? 10000).toString()) ?? 10000,
+      totalHour: (json['total_hour'] ?? '0').toString(),
     );
   }
 
@@ -47,6 +50,7 @@ class ManagerHomeModel {
       'rank': rank,
       'at_risk': atRisk,
       'total_diamond': totalDiamond,
+      'target_diamond': targetDiamond,
       'total_hour': totalHour,
     };
   }

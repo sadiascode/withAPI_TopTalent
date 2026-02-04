@@ -54,6 +54,7 @@ class ManagerInfo {
   final int? risk;
   final int? excellent;
   final double? totalHour;
+  final int? targetDiamonds;
 
   ManagerInfo({
     required this.id,
@@ -71,6 +72,7 @@ class ManagerInfo {
     this.risk,
     this.excellent,
     this.totalHour,
+    this.targetDiamonds,
   });
 
   factory ManagerInfo.fromJson(Map<String, dynamic> json) {
@@ -90,6 +92,7 @@ class ManagerInfo {
       risk: json['at_risk'] ?? json['risk'] ?? json['at_risk_count'] ?? 0,
       excellent: json['excellent'] ?? json['excellent_count'] ?? 0,
       totalHour: json['total_hour'] != null ? double.tryParse(json['total_hour'].toString()) : null,
+      targetDiamonds: json['target_diamond'] ?? json['target_diamonds'] ?? 0,
     );
   }
 

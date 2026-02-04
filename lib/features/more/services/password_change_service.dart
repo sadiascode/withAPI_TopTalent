@@ -54,11 +54,13 @@ class PasswordChangeService {
       print('   - Status Code: ${response.statusCode}');
       print('   - Response Body: ${response.body}');
 
-      if (response.statusCode == 200) {
+      if (response.statusCode >= 200 && response.statusCode < 300) {
         print('✅ Password changed successfully');
         return true;
       } else {
         print('❌ Password change failed');
+        print('   - Status: ${response.statusCode}');
+        print('   - Error: ${response.body}');
         return false;
       }
     } catch (e) {

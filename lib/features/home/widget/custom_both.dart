@@ -68,18 +68,23 @@ class _CustomBothState extends State<CustomBoth> {
                     ),
 
                     const SizedBox(width: 5),
-                    Text(
-                      widget.title,
-                      style: const TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                    Expanded(
+                      child: Text(
+                        widget.title,
+                        maxLines: 2,
+                        softWrap: true,
+                        overflow: TextOverflow.visible,
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ],
                 ),
 
-                const SizedBox(height: 60),
+                const Spacer(),
                 Text(
                   NumberFormat('#,###').format(widget.number),
                   style: const TextStyle(
@@ -88,6 +93,7 @@ class _CustomBothState extends State<CustomBoth> {
                     color: Colors.white,
                   ),
                 ),
+                const SizedBox(height: 10),
               ],
             ),
           ),

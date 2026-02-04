@@ -284,6 +284,7 @@ class _CreatorDetailsScreenState extends State<CreatorDetailsScreen> {
               const SizedBox(height: 10),
               CustomPichart(
                 diamondValue: creatorInfo?.totalDiamond?.toString() ?? '0',
+                targetValue: creatorInfo?.targetDiamonds?.toString() ?? '-',
               ),
 
               const SizedBox(height: 16),

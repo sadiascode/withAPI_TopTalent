@@ -156,7 +156,7 @@ class _ManagerRankState extends State<ManagerRank> {
                                 ),
                                 const SizedBox(height: 8),
                                 Text(
-                                  allManagers.isNotEmpty ? (allManagers[0].name ?? 'Unknown Manager') : 'Sophie Kihm',
+                                  allManagers.isNotEmpty ? (allManagers[0].name ?? 'N/A') : '-',
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
@@ -213,7 +213,7 @@ class _ManagerRankState extends State<ManagerRank> {
                                 ),
                                 const SizedBox(height: 8),
                                 Text(
-                                  allManagers.length > 1 ? (allManagers[1].name ?? 'Unknown Manager') : 'Lisa Anderson',
+                                  allManagers.length > 1 ? (allManagers[1].name ?? 'N/A') : '-',
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(
@@ -270,7 +270,7 @@ class _ManagerRankState extends State<ManagerRank> {
                                 ),
                                 const SizedBox(height: 8),
                                 Text(
-                                  allManagers.length > 2 ? (allManagers[2].name ?? 'Unknown Manager') : 'Van Dijk',
+                                  allManagers.length > 2 ? (allManagers[2].name ?? 'N/A') : '-',
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: TextStyle(

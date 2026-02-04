@@ -6,18 +6,37 @@ import '../../../common/custom_color.dart';
 
 class CustomPichart extends StatelessWidget {
   final String? diamondValue;
+  final String? targetValue;
 
   const CustomPichart({
     super.key,
     this.diamondValue,
+    this.targetValue,
   });
+
+  double _parseValue(String? value) {
+    if (value == null) return 0;
+    String cleanValue = value.replaceAll(',', '').toUpperCase();
+    double factor = 1.0;
+    
+    if (cleanValue.endsWith('M')) {
+      factor = 1000000;
+      cleanValue = cleanValue.substring(0, cleanValue.length - 1);
+    } else if (cleanValue.endsWith('K')) {
+      factor = 1000;
+      cleanValue = cleanValue.substring(0, cleanValue.length - 1);
+    }
+    
+    return (double.tryParse(cleanValue) ?? 0) * factor;
+  }
 
   @override
   Widget build(BuildContext context) {
     // Calculate dynamic values based on diamond data
-    final diamondNum = double.tryParse(diamondValue?.replaceAll(',', '') ?? '0') ?? 0;
-    final targetDiamonds = 10000.0; // Target value
-    final percentage = (diamondNum / targetDiamonds).clamp(0.0, 1.0);
+    final diamondNum = _parseValue(diamondValue);
+    final targetNum = _parseValue(targetValue ?? '10000');
+    
+    final percentage = (diamondNum / (targetNum == 0 ? 1 : targetNum)).clamp(0.0, 1.0);
     final achievedValue = percentage * 100;
     final remainingValue = 100 - achievedValue;
 
@@ -76,7 +95,7 @@ class CustomPichart extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          diamondValue ?? '0',
+                          targetValue ?? '10000',
                           style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
@@ -129,7 +148,7 @@ class CustomPichart extends StatelessWidget {
                     ),
                     SizedBox(width: 8),
                     Text(
-                      '${diamondValue ?? '800'} achieved',
+                      '${diamondValue ?? '-'} achieved',
                       style: TextStyle(
                         fontSize: 14,
                         color: Colors.white,

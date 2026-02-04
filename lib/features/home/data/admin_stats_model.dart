@@ -3,6 +3,7 @@ class AdminStatsModel {
   final int totalManagers;
   final int scrapeToday;
   final int totalDiamondAchieve;
+  final int targetDiamond;
   final double totalHour;
 
   AdminStatsModel({
@@ -10,6 +11,7 @@ class AdminStatsModel {
     required this.totalManagers,
     required this.scrapeToday,
     required this.totalDiamondAchieve,
+    required this.targetDiamond,
     required this.totalHour,
   });
 
@@ -19,6 +21,7 @@ class AdminStatsModel {
       totalManagers: json['total_managers'] ?? 0,
       scrapeToday: json['scrape_today'] ?? 0,
       totalDiamondAchieve: json['total_diamond_achieve'] ?? 0,
+      targetDiamond: json['target_diamonds'] ?? 0,
       totalHour: double.tryParse(json['total_hour'].toString()) ?? 0.0,
     );
   }
@@ -29,6 +32,7 @@ class AdminStatsModel {
       'total_managers': totalManagers,
       'scrape_today': scrapeToday,
       'total_diamond_achieve': totalDiamondAchieve,
+      'target_diamonds': targetDiamond,
       'total_hour': totalHour,
     };
   }
@@ -52,6 +56,17 @@ class AdminStatsModel {
       return '${(totalHour / 1000).toStringAsFixed(1)}K';
     } else {
       return totalHour.toStringAsFixed(1);
+    }
+  }
+
+  // Format targetDiamond as million/thousand
+  String get formattedTargetDiamond {
+    if (targetDiamond >= 1000000) {
+      return '${(targetDiamond / 1000000).toStringAsFixed(2)}M';
+    } else if (targetDiamond >= 1000) {
+      return '${(targetDiamond / 1000).toStringAsFixed(1)}K';
+    } else {
+      return targetDiamond.toString();
     }
   }
 }
