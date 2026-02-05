@@ -29,6 +29,7 @@ class Urls {
   //Admin all creator
   static const String Creator_Dashboard_Score =
       "$baseUrl/api/dashboard/creator/";
+  static const String Creator_Rank = "$baseUrl/api/dashboard/creator/rank/";
 
   // single manager
   static String singleManagerDashboardScore(int managerId) {

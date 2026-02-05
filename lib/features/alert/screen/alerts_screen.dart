@@ -159,6 +159,7 @@ class _AlertsScreenState extends State<AlertsScreen> {
                       categoryLabel: alert.alertType ?? "general",
                       categoryLabelCo: _getPriorityColor(alert.priority),
                       name: alert.username ?? 'Unknown User',
+                      userId: alert.userId,
                       description:
                       alert.alertMessage ?? 'No description available',
                       date: _formatDate(alert.updatedAt),
