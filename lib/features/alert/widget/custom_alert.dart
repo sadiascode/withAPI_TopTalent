@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:dio/dio.dart';
+import 'package:top_talent_agency/app/urls.dart';
 import 'package:top_talent_agency/core/roles.dart';
+import 'package:top_talent_agency/core/services/token_storage_service.dart';
 
 class CustomAlert extends StatelessWidget {
   final IconData icon;
@@ -17,6 +20,7 @@ class CustomAlert extends StatelessWidget {
   final Color containerColor;
   final Color containerBorderColor;
   final UiUserRole? userRole;
+  final int? userId;
 
   const CustomAlert({
     super.key,
@@ -34,7 +38,43 @@ class CustomAlert extends StatelessWidget {
     required this.containerColor ,
     required this.containerBorderColor,
     this.userRole,
+    this.userId,
   });
+
+  Future<void> _sendNotification(BuildContext context, String message) async {
+    try {
+      final token = await TokenStorageService.getStoredToken();
+      final dio = Dio();
+
+      final response = await dio.post(
+        Urls.AI_Response_alerts,
+        data: {
+          "user_id": userId,
+          "message": message,
+        },
+        options: Options(
+          headers: {
+            'Content-Type': 'application/json',
+            if (token != null) 'Authorization': 'Bearer $token',
+          },
+        ),
+      );
+
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Notification sent successfully')),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Failed to send notification: ${response.statusCode}')),
+        );
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error sending notification: $e')),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -109,7 +149,7 @@ class CustomAlert extends StatelessWidget {
                       onTap: () {
                         showDialog(
                           context: context,
-                          builder: (context) {
+                          builder: (dialogContext) {
                             final TextEditingController _textController = TextEditingController();
 
                             return Dialog(
@@ -158,12 +198,16 @@ class CustomAlert extends StatelessWidget {
 
                                     //   button
                                     GestureDetector(
-                                      onTap: () {
-                                        final reason = _textController.text.trim();
-                                        if (reason.isNotEmpty) {
-                                          print("Reason: $reason");
+                                      onTap: () async {
+                                        final message = _textController.text.trim();
+                                        if (message.isNotEmpty) {
+                                          Navigator.of(dialogContext).pop();
+                                          await _sendNotification(context, message);
+                                        } else {
+                                          ScaffoldMessenger.of(context).showSnackBar(
+                                            const SnackBar(content: Text('Please enter a message')),
+                                          );
                                         }
-                                        Navigator.of(context).pop();
                                       },
                                       child: Container(
                                         height: 50,

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CustomRankcoin extends StatelessWidget {
   final String rank;
   final String name;
-  final String hours;
+  final String? hours;
   final String Diamond;
   final bool isIncreasing;
 
@@ -11,7 +11,7 @@ class CustomRankcoin extends StatelessWidget {
     super.key,
     required this.rank,
     required this.name,
-    required this.hours,
+    this.hours,
     required this.Diamond,
     this.isIncreasing = true,
   });

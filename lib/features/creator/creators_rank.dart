@@ -32,7 +32,7 @@ class _CreatorsRankState extends State<CreatorsRank> {
       final dio = Dio();
       
       final response = await dio.get(
-        Urls.Creator_Dashboard_Score,
+        Urls.Creator_Rank,
         options: Options(
           headers: {
             'Content-Type': 'application/json',
@@ -200,7 +200,6 @@ class _CreatorsRankState extends State<CreatorsRank> {
                                             CustomRankcoin(
                                               rank: '$actualRank',
                                               name: creator.username ?? 'N/A',
-                                              hours: '${creator.totalHour ?? 0}h',
                                               Diamond: '${creator.totalDiamond ?? 0}'
                                             ),
                                             const SizedBox(height: 20),
@@ -235,7 +234,7 @@ class _CreatorsRankState extends State<CreatorsRank> {
           elevation: 0,
           backgroundColor: Colors.black,
           title: const Text(
-            "Your rank",
+            "Rank",
             style: TextStyle(
               color: Colors.white,
               fontSize: 16,
@@ -340,7 +339,6 @@ class _CreatorsRankState extends State<CreatorsRank> {
                                       CustomRankcoin(
                                         rank: '$actualRank',
                                         name: creator.username ?? 'N/A',
-                                        hours: '${creator.totalHour ?? 0}h',
                                         Diamond: '${creator.totalDiamond ?? 0}'
                                       ),
                                       const SizedBox(height: 20),
