@@ -29,6 +29,7 @@ class ViewAssignCreatorsScreen extends StatefulWidget {
 class _ViewAssignCreatorsScreenState extends State<ViewAssignCreatorsScreen> {
   bool isLoading = false;
   List<SingleCreatorModel> creators = [];
+  List<SingleCreatorModel> filteredCreators = [];
   String? errorMessage;
 
   @override
@@ -179,6 +180,7 @@ class _ViewAssignCreatorsScreenState extends State<ViewAssignCreatorsScreen> {
 
         setState(() {
           creators = creatorList;
+          filteredCreators = creatorList;
           isLoading = false;
         });
 
@@ -236,14 +238,28 @@ class _ViewAssignCreatorsScreenState extends State<ViewAssignCreatorsScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CustomSearch(),
+            CustomSearch(
+              hintText: "Search creators...",
+              onSearch: (query) {
+                setState(() {
+                  if (query.isEmpty) {
+                    filteredCreators = creators;
+                  } else {
+                    filteredCreators = creators
+                        .where((creator) => creator.username.toLowerCase()
+                            .contains(query.toLowerCase()))
+                        .toList();
+                  }
+                });
+              },
+            ),
             const SizedBox(height: 12),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  "Showing ${creators.length} of ${creators.length} creators",
+                  "Showing ${filteredCreators.length} of ${creators.length} creators",
                   style: TextStyle(fontSize: 15, color: Colors.white),
                 ),
                 InkWell(
@@ -268,8 +284,8 @@ class _ViewAssignCreatorsScreenState extends State<ViewAssignCreatorsScreen> {
 
             const SizedBox(height: 20),
 
-            // Show creators from API
-            ...creators.map((creator) {
+            // Show filtered creators from API
+            ...filteredCreators.map((creator) {
               print(
                 '👤 Creator: ${creator.username}, Diamonds: ${creator.totalDiamond}, Hours: ${creator.totalHour}',
               );
@@ -284,7 +300,7 @@ class _ViewAssignCreatorsScreenState extends State<ViewAssignCreatorsScreen> {
             }).toList(),
 
             // Fallback static creators if no API data
-            if (creators.isEmpty) ...[
+            if (filteredCreators.isEmpty && creators.isEmpty) ...[
               _creatorCard(
                 context: context,
                 name: "djes.yt",

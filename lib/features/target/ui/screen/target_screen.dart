@@ -224,48 +224,31 @@ class _TargetsScreenState extends State<TargetsScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     if (monthTargets.isEmpty) ...[
-                      Container(
-                        padding: const EdgeInsets.all(32),
-                        decoration: BoxDecoration(
-                          color: const Color(0xff1D0014),
-                          borderRadius: BorderRadius.circular(16),
-                        ),
-                        child: Column(
-                          children: [
-                            Icon(
-                              Icons.data_usage,
-                              size: 48,
-                              color: Colors.grey[600],
-                            ),
-                            const SizedBox(height: 16),
-                            const Text(
-                              "No target data available",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w600,
+                      Center(
+                        child: Container(
+                          padding: const EdgeInsets.all(32),
+                          decoration: BoxDecoration(
+                            color: const Color(0xff1D0014),
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          child: Column(
+                            children: [
+                              Icon(
+                                Icons.data_usage,
+                                size: 48,
+                                color: Colors.grey[600],
                               ),
-                            ),
-                            const SizedBox(height: 8),
-                            Text(
-                              errorMessage ??
-                                  "Please check your connection and try again",
-                              style: TextStyle(
-                                color: Colors.grey[400],
-                                fontSize: 14,
+                              const SizedBox(height: 16),
+                              const Text(
+                                "No target data available",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
-                              textAlign: TextAlign.center,
-                            ),
-                            const SizedBox(height: 16),
-                            ElevatedButton(
-                              onPressed: _fetchTargetData,
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xff620041),
-                                foregroundColor: Colors.white,
-                              ),
-                              child: const Text("Retry"),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ] else ...[

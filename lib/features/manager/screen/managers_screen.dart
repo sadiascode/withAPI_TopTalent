@@ -4,7 +4,6 @@ import 'package:top_talent_agency/features/manager/screen/manager_rank.dart';
 import 'package:top_talent_agency/features/manager/widget/custom_sortview.dart';
 import 'package:top_talent_agency/features/admin/services/manager_dashboard_service.dart';
 import 'package:top_talent_agency/features/admin/data/manager_dashboard_model.dart';
-import 'package:top_talent_agency/features/manager/data/manager_model.dart';
 import '../widget/custom_search.dart';
 
 class ManagersScreen extends StatefulWidget {
@@ -18,6 +17,7 @@ class _ManagersScreenState extends State<ManagersScreen> {
   ManagerDashboardModel? managerDashboard;
   bool isLoading = true;
   int totalCreators = 0;
+  List<ManagerInfo> filteredManagers = [];
 
   @override
   void initState() {
@@ -45,6 +45,7 @@ class _ManagersScreenState extends State<ManagersScreen> {
         if (mounted) {
           setState(() {
             managerDashboard = dashboard;
+            filteredManagers = dashboard.managers;
             totalCreators = creators;
             isLoading = false;
           });
@@ -90,8 +91,16 @@ class _ManagersScreenState extends State<ManagersScreen> {
               CustomSearch(
                 hintText: "Search managers...",
                 onSearch: (query) {
-                  print('Searching for manager: $query');
-                  // Add search logic here if needed
+                  setState(() {
+                    if (query.isEmpty) {
+                      filteredManagers = managerDashboard?.managers ?? [];
+                    } else {
+                      filteredManagers = managerDashboard?.managers
+                          .where((manager) => manager.name.toLowerCase()
+                              .contains(query.toLowerCase()))
+                          .toList() ?? [];
+                    }
+                  });
                 },
               ),
 
@@ -105,7 +114,7 @@ class _ManagersScreenState extends State<ManagersScreen> {
                       Text(
                         isLoading
                             ? "Loading managers..."
-                            : "Showing ${managerDashboard?.managers.length ?? 0} of ${managerDashboard?.totalManagers ?? 0} managers",
+                            : "Showing ${filteredManagers.length} of ${managerDashboard?.totalManagers ?? 0} managers",
                         style: TextStyle(
                           fontSize: 15,
                           color: Colors.white,
@@ -143,9 +152,9 @@ class _ManagersScreenState extends State<ManagersScreen> {
                 ],
               ),
               SizedBox(height: 20),
-              // Display managers from backend data
+              // Display filtered managers from backend data
               if (!isLoading && managerDashboard != null)
-                ...managerDashboard!.managers.map((manager) {
+                ...filteredManagers.map((manager) {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 20),
                     child: CustomSortview(
